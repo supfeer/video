@@ -35,7 +35,7 @@
 		<!-- add the video sources and play the video -->
 		<action name="add_video_sources">
 			<!-- videointerface_addsource('1024x512', '%CURRENTXML%/video-1024x512.mp4|%CURRENTXML%/video-1024x512.webm|%CURRENTXML%/iphone-audio.m4a', '%CURRENTXML%/video-1024x512-poster.jpg'); -->
-			<!-- videointerface_addsource('1920x960', '%CURRENTXML%/video-1920x960.mp4', '%CURRENTXML%/video-1920x960-poster.jpg'); -->
+			videointerface_addsource('1920x960', '%CURRENTXML%/video-1920x960.mp4', '%CURRENTXML%/video-1920x960-poster.jpg');
 			videointerface_addsource('1920x960', '%CURRENTXML%/video.mp4', '%CURRENTXML%/video-1920x960-poster.jpg');
 			
 			if(device.ios,
