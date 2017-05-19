@@ -34,8 +34,9 @@
 
 		<!-- add the video sources and play the video -->
 		<action name="add_video_sources">
-			videointerface_addsource('1024x512', '%CURRENTXML%/video-1024x512.mp4|%CURRENTXML%/video-1024x512.webm|%CURRENTXML%/iphone-audio.m4a', '%CURRENTXML%/video-1024x512-poster.jpg');
-			videointerface_addsource('1920x960', '%CURRENTXML%/video-1920x960.mp4|%CURRENTXML%/video-1920x960.webm|%CURRENTXML%/iphone-audio.m4a', '%CURRENTXML%/video-1920x960-poster.jpg');
+			<!-- videointerface_addsource('1024x512', '%CURRENTXML%/video-1024x512.mp4|%CURRENTXML%/video-1024x512.webm|%CURRENTXML%/iphone-audio.m4a', '%CURRENTXML%/video-1024x512-poster.jpg'); -->
+			<!-- videointerface_addsource('1920x960', '%CURRENTXML%/video-1920x960.mp4', '%CURRENTXML%/video-1920x960-poster.jpg'); -->
+			videointerface_addsource('1920x960', 'http://dl33.rc-content.com/fa/repository/meta/model/167/88/167.167trailer.mp4?expires=1494426063&token=yZ073DOO6IHmwZ-UL7MA2Q&', '%CURRENTXML%/video-1920x960-poster.jpg');
 			
 			if(device.ios,
 				<!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
